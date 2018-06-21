@@ -4,7 +4,7 @@
   "description": "Ramda based functional helpers for Redux",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "jest",
     "test:watch": "mocha -w",
     "lint": "eslint src",
     "prepublish": "npm run build",
@@ -13,17 +13,20 @@
   "author": "Dave Tonge",
   "license": "ISC",
   "dependencies": {
-    "ramda": "^0.22.1"
+    "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "@mft/eslint-config-momentumft": "^1.1.0",
+    "@mft/eslint-config-momentumft": "^3.1.5",
     "babel-cli": "^6.16.0",
-    "babel-eslint": "^6.1.2",
-    "babel-preset-es2015-loose": "^6.1.3",
-    "babel-preset-stage-0": "^6.16.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-ramda": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.16.3",
-    "eslint": "^2.13.1",
-    "eslint-plugin-babel": "^3.1.0",
-    "mocha": "^3.1.0"
+    "eslint": "^4.19.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "jest": "^23.1.0",
+    "jest-babel": "^1.0.1",
+    "mocha": "^5.2.0"
   }
 }

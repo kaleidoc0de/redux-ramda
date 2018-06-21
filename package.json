@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "mocha -w",
+    "test:watch": "jest --watch",
     "lint": "eslint src",
     "prepublish": "npm run build",
     "build": "rm -rf lib/ && babel --out-dir lib/ src/"

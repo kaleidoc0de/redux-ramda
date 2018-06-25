@@ -1,2 +1,7 @@
 ---
-  extends: "./node_modules/@mft/eslint-config-momentumft/index.js"
+  extends: ["plugin:jest/recommended", "./node_modules/@mft/eslint-config-momentumft/index.js"]
+  plugins: ["jest"]
+  parserOptions:
+    sourceType: "module"
+  rules:
+    no-underscore-dangle: [2, { "allow": ["__"] }]
